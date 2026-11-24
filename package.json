@@ -1,7 +1,7 @@
 {
   "name": "@nathan-adk/dsh-rea-lazy",
-  "version": "1.1.2",
-  "description": "On-demand REA for DeepSeek Harness: auto-detects the local REA executable and registers it as a lazy capability, so 263 REA tools stay searchable while rea mcp never runs in the background. DSH-only.",
+  "version": "2.0.0",
+  "description": "Self-contained on-demand REA capability layer for DeepSeek Harness: built-in compact index + search/describe/call meta-tools + on-disk cache + on-demand spawn + daily upstream check. No third-party catalog required.",
   "keywords": [
     "deepseek-harness",
     "dsh",
@@ -28,9 +28,6 @@
       "patch": "./cordis.patch.yml"
     }
   },
-  "peerDependencies": {
-    "@kirkchinese/dsh-capability-catalog": "^0.2.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nathan-ADK/dsh-rea-lazy.git"
@@ -39,5 +36,8 @@
   "engines": {
     "node": ">=18"
   },
-  "main": "lib/index.js"
+  "main": "lib/index.js",
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.2.0"
+  }
 }
