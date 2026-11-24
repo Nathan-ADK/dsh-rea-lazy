@@ -1,0 +1,41 @@
+{
+  "name": "@nathan-adk/dsh-rea-lazy",
+  "version": "1.0.0",
+  "description": "On-demand REA for DeepSeek Harness: keep all 263 REA tools searchable in the lazy capability catalog while keeping rea mcp non-resident (brief one-time discovery, then no auto-start; zero background token cost). DSH-only configuration bundle.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "rea",
+    "reverse-engineering",
+    "mcp",
+    "lazy",
+    "on-demand",
+    "token-saving"
+  ],
+  "license": "MIT",
+  "author": "Nathan-ADK",
+  "type": "module",
+  "files": [
+    "cordis.patch.yml",
+    "catalog/mcp-rea.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@kirkchinese/dsh-capability-catalog": "^0.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathan-ADK/dsh-rea-lazy.git"
+  },
+  "homepage": "https://github.com/Nathan-ADK/dsh-rea-lazy#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
