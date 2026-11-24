@@ -1,6 +1,6 @@
 {
   "name": "@nathan-adk/dsh-rea-lazy",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Self-contained on-demand REA capability layer for DeepSeek Harness: built-in compact index + search/describe/call meta-tools + on-disk cache + on-demand spawn + daily upstream check. No third-party catalog required.",
   "keywords": [
     "deepseek-harness",
