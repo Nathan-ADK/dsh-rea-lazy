@@ -1,6 +1,6 @@
 {
   "name": "@nathan-adk/dsh-rea-lazy",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "On-demand REA for DeepSeek Harness: auto-detects the local REA executable and registers it as a lazy capability, so 263 REA tools stay searchable while rea mcp never runs in the background. DSH-only.",
   "keywords": [
     "deepseek-harness",
