@@ -1,8 +1,9 @@
-# REA on-demand config layer for DeepSeek Harness (DSH-only).
-# Inserts the bootstrap plugin row; the plugin autodetects the local REA command
-# and registers it with @kirkchinese/dsh-capability-catalog. No local paths are
-# hardcoded. REA_COMMAND env overrides detection when needed.
+# dsh-rea-lazy v2.0.0 — self-contained on-demand REA capability layer.
+# Inserts our own plugin (no third-party capability-catalog needed).
+# REA_COMMAND env / $DSH_HOME/.env overrides detection; otherwise PATH / local rea.mjs.
 - insert:
     - id: dsh-rea-lazy
       name: '@nathan-adk/dsh-rea-lazy'
-      config: {}
+      config:
+        idleDisconnectMs: 300000
+        checkIntervalMs: 86400000
